@@ -53,7 +53,7 @@ creator
         new GatewayServer(
             (handler) => client.ws.on('INTERACTION_CREATE', handler)
         )
-    )
+    )   
     .registerCommandsIn(path.join(__dirname, 'slash-commands'))
     .syncCommands();
 
